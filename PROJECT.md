@@ -16,7 +16,9 @@ Configuração do Backend (Laravel)
 
   Clone o repositório:
 
-``` git clone https://github.com/MateusAntunes95/carrinho_compra.git``` 
+``` 
+git clone https://github.com/MateusAntunes95/challenge-fullstack.git
+``` 
 
 Rode os seguintes comandos na raiz do projeto:
 ```
