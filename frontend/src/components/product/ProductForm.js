@@ -96,42 +96,41 @@ function ProductForm({ btnText, match }) {
         <div className="container mt-4">
             <div className="card">
                 <div className="card-header bg-light">
-                    <div className="card-body">
-                        <form onSubmit={handleSubmit} className="row">
-                            <div className="form-group col-md-4 mb-3">
-                                <Input type="text" text="Produto" name="name" value={formData.name} onChange={handleInputChange} />
-                            </div>
-                            <div className="form-group col-md-4 mb-3">
-                                <Input type="text" text="Preço" name="price" value={formData.price} onChange={handleInputChange} />
-                            </div>
-                            <div className="form-group col-md-4 mb-3">
-                                <Input type="number" text="Quantidade" name="quantity" value={formData.quantity} onChange={handleInputChange} />
-                            </div>
-                            <div className="col-12 mb-3">
-                                <Input type="textarea" text="Descrição" name="description" value={formData.description} onChange={handleInputChange} />
-                            </div>
-                            <div className="col-12 mb-3">
-                                <label>
-                                    <input
-                                        type="checkbox"
-                                        name="active"
-                                        className="form-check-input"
-                                        checked
-                                        onChange={handleInputChange}
-                                    />
-                                    Ativo
-                                </label>
-                            </div>
-                        </form>
-                    </div>
-                    <div className="card-footer d-flex justify-content-between align-items-center">
-                        <div>
-                            <BtnProduct />
+                    <form onSubmit={handleSubmit} className="row">
+                        <div className="card-body">
+                                <div className="form-group col-md-4 mb-3">
+                                    <Input type="text" text="Produto" name="name" value={formData.name} onChange={handleInputChange} />
+                                </div>
+                                <div className="form-group col-md-4 mb-3">
+                                    <Input type="text" text="Preço" name="price" value={formData.price} onChange={handleInputChange} />
+                                </div>
+                                <div className="form-group col-md-4 mb-3">
+                                    <Input type="number" text="Quantidade" name="quantity" value={formData.quantity} onChange={handleInputChange} />
+                                </div>
+                                <div className="col-12 mb-3">
+                                    <Input type="textarea" text="Descrição" name="description" value={formData.description} onChange={handleInputChange} />
+                                </div>
+                                <div className="col-12 mb-3">
+                                    <label>
+                                        <input
+                                            type="checkbox"
+                                            name="active"
+                                            className="form-check-input"
+                                            checked
+                                        />
+                                        Ativo
+                                    </label>
+                                </div>
                         </div>
-                        <div className="ml-auto">
-                            <SubmitButton text="Salvar" />
+                        <div className="card-footer d-flex justify-content-between align-items-center">
+                            <div>
+                                <BtnProduct />
+                            </div>
+                            <div className="ml-auto">
+                                <SubmitButton text="Salvar" />
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
