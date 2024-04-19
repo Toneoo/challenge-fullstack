@@ -49,3 +49,36 @@ vendor/bin/sail php artisan key:generate
 ``` 
 vendor/bin/sail php artisan migrate
 ```
+``` 
+vendor/bin/sail php artisan db:seed
+``` 
+
+Configuração do Frontend (React)
+
+```
+cd ../frontend
+```
+
+
+```
+npm install
+```
+
+```
+npm start
+``` 
+
+O frontend estará acessível em http://localhost:3000
+
+Usuario para teste
+
+Email:
+
+```
+admin@teste.com
+```
+Senha:
+```
+123
+```
+
