@@ -18,14 +18,8 @@ class LoginController extends Controller
             $token = $user->createToken('AuthToken')->plainTextToken;
             info($token);
 
-            if ($user->tokens->where('name', 'AuthToken')->where('id', $token->id)->first()->check()) {
-                return response()->json(['token' => $token], 200);
-            } else {
-
-                return response()->json(['error' => 'Token inválido'], 401);
-            }
+            return response()->json(['token' => $token], 200);
         }
-
 
         return response()->json(['error' => 'Credenciais inválidas'], 401);
     }
